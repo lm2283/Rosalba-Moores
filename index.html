@@ -14,16 +14,6 @@
             background-color: white;
         }
 
-        a {
-            color: #404040;
-            text-decoration: underline;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #666666;
-        }
-
         .outer-banner {
             background-color: #E5E1DC;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -50,9 +40,17 @@
             font-size: 1.2rem;
         }
 
+        a {
+            color: #404040;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #666666;
+        }
+
         .button {
-            text-decoration: none;
-            color: white;
             background-color: #404040;
             color: white;
             padding: 0.8rem 1.5rem;
@@ -83,11 +81,11 @@
 
         .about-text {
             max-width: 450px;
-            margin-top: -0.5rem; /* This will pull up the text to align with photo */
+            margin-top: -0.5rem;
         }
 
         .about-text h2 {
-            margin-top: 0; /* Remove top margin from heading */
+            margin-top: 0;
         }
 
         .profile-image {
@@ -170,10 +168,7 @@
 
             .about-text {
                 max-width: 100%;
-            }
-
-            .about-text {
-                margin-top: 0; /* Reset the negative margin on mobile */
+                margin-top: 0;
             }
 
             .profile-image {
@@ -203,9 +198,8 @@
             }
 
             .story-section p, .approach-section p {
-                text-align: left; /* Switch to left align on mobile for better readability */
+                text-align: left;
             }
-        }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
