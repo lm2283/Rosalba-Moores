@@ -70,10 +70,11 @@
 
         .about-text {
             max-width: 450px;
+            margin-top: -0.5rem; /* This will pull up the text to align with photo */
         }
 
-        .about-text p {
-            text-align: justify;
+        .about-text h2 {
+            margin-top: 0; /* Remove top margin from heading */
         }
 
         .profile-image {
@@ -94,6 +95,16 @@
             margin-top: 1.5rem;
         }
 
+        .expertise-row-two {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            max-width: calc(66% + 1rem);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .expertise-card {
             background-color: #E5E1DC;
             padding: 1.5rem;
@@ -105,6 +116,14 @@
         .expertise-card:hover {
             transform: translateY(-5px);
             background-color: #E5DACF;
+        }
+
+        .story-section, .approach-section {
+            margin: 3rem 0;
+        }
+
+        .story-section p, .approach-section p {
+            text-align: justify;
         }
 
         h2 {
@@ -133,14 +152,15 @@
                 grid-template-columns: 1fr;
                 gap: 2rem;
                 text-align: left;
+                margin: 1rem 0;
             }
 
             .about-text {
                 max-width: 100%;
             }
 
-            .about-text p {
-                text-align: left;
+            .about-text {
+                margin-top: 0; /* Reset the negative margin on mobile */
             }
 
             .profile-image {
@@ -154,10 +174,10 @@
                 text-align: left;
             }
 
-            .expertise-grid {
+            .expertise-grid, .expertise-row-two {
                 grid-template-columns: 1fr;
                 gap: 1rem;
-                max-width: 250px; /* Match profile image width */
+                max-width: 250px;
                 margin: 1.5rem auto 0;
             }
 
@@ -168,6 +188,11 @@
             h2 {
                 text-align: left;
             }
+
+            .story-section p, .approach-section p {
+                text-align: left; /* Switch to left align on mobile for better readability */
+            }
+        }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
@@ -186,25 +211,43 @@
     <div class="container">
         <div class="about-section">
             <div class="about-text">
-                <h2>About</h2>
-                <p>Rosalba graduated from the College of Naturopathic Medicine and is a member of the BANT organisation and the Association of Naturopathic Practitioners. She is also CNHC registered. Rosalba currently practices at the London Wellbeing & Nutrition Clinic, where she aims to empower people to take control of their health, and to make sustainable, achievable and long-term health changes.</p>
+                <h2>About Me</h2>
+                <p>I graduated from the College of Naturopathic Medicine and am a member of both the BANT organization and the Association of Naturopathic Practitioners. I am also CNHC registered. I have further enhanced my clinical skills through the Clinic Supervisor Programme at CNM. Currently, I practice at the London Wellbeing & Nutrition Clinic, where my goal is to empower people to take control of their health and make sustainable, achievable, and long-term health changes.</p>
             </div>
             <img src="Studio Session-030-2 (Large).jpg" alt="Rosalba Moores" class="profile-image">
+        </div>
+
+        <div class="approach-section">
+            <h2>My Approach</h2>
+            <p>My approach to nutritional therapy is holistic, meaning I consider how the different systems in your body are interconnected and influence your overall health. I stay up-to-date with the latest scientific research in nutrition, with a primary focus on using nutrition to enhance your health and well-being. My goal is to help you understand the root causes of your symptoms and work towards managing, reducing, or resolving them. This involves a thorough assessment of your body systems, diet, and lifestyle.</p>
         </div>
 
         <div class="expertise-section">
             <h2>Areas of Expertise</h2>
             <div class="expertise-grid">
                 <div class="expertise-card">
-                    <h3>Healthy Ageing</h3>
+                    <h3>Brain Health</h3>
+                </div>
+                <div class="expertise-card">
+                    <h3>Digestive Health</h3>
+                </div>
+                <div class="expertise-card">
+                    <h3>Women's Health</h3>
+                </div>
+            </div>
+            <div class="expertise-row-two">
+                <div class="expertise-card">
+                    <h3>Weight Management</h3>
                 </div>
                 <div class="expertise-card">
                     <h3>Longevity</h3>
                 </div>
-                <div class="expertise-card">
-                    <h3>General Wellbeing</h3>
-                </div>
             </div>
+        </div>
+
+        <div class="story-section">
+            <h2>My Story</h2>
+            <p>I have a particular interest in using nutrition to prevent and limit cognitive decline. My journey began over a decade ago while caring for my mother, who was diagnosed with Parkinson's disease. More recently, my father has been diagnosed with mid-stage Alzheimer's, deepening my passion for this field. I am dedicated to promoting healthy ageing, understanding the root causes of neurodegenerative diseases, and exploring how food and nutrition can influence or improve these conditions.</p>
         </div>
     </div>
 </body>
