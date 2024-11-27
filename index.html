@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #404040; /* Darkened base text color */
+            color: #404040;
             background-color: white;
         }
 
@@ -31,17 +31,17 @@
         .banner-text h1 {
             margin: 0;
             font-size: 2.2rem;
-            color: #333333; /* Darkened heading color */
+            color: #333333;
         }
 
         .banner-text p {
             margin: 0.3rem 0 0 0;
-            color: #666666; /* Darkened secondary text */
+            color: #666666;
             font-size: 1.2rem;
         }
 
         .button {
-            background-color: #404040; /* Darkened button color */
+            background-color: #404040;
             color: white;
             padding: 0.8rem 1.5rem;
             text-decoration: none;
@@ -73,7 +73,7 @@
         }
 
         .about-text p {
-            text-align: justify; /* Added text justification */
+            text-align: justify;
         }
 
         .profile-image {
@@ -110,18 +110,29 @@
         h2 {
             margin-bottom: 1rem;
             font-size: 1.8rem;
-            color: #333333; /* Darkened heading color */
+            color: #333333;
         }
 
         h3 {
-            color: #333333; /* Darkened heading color */
+            color: #333333;
         }
 
         @media (max-width: 768px) {
+            .banner {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
             .about-section {
                 grid-template-columns: 1fr;
-                text-align: center;
                 gap: 2rem;
+                text-align: left;
             }
 
             .about-text {
@@ -129,26 +140,33 @@
             }
 
             .about-text p {
-                text-align: center; /* Center text on mobile instead of justify */
+                text-align: left;
+            }
+
+            .profile-image {
+                width: 250px;
+                height: 250px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .expertise-section h2 {
+                text-align: left;
             }
 
             .expertise-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .profile-image {
-                margin: 0 auto;
-            }
-
-            .container {
-                padding: 1rem;
-            }
-
-            .banner {
-                padding: 1rem;
-                flex-direction: column;
-                text-align: center;
                 gap: 1rem;
+                max-width: 250px; /* Match profile image width */
+                margin: 1.5rem auto 0;
+            }
+
+            .expertise-card {
+                padding: 1.25rem;
+            }
+
+            h2 {
+                text-align: left;
             }
         }
     </style>
